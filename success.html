@@ -1,121 +1,43 @@
 <!DOCTYPE html>
-<html lang="pl" class="no-js">
+<html lang="pl">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Złota Rączka</title>
-    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Oxygen:700" rel="stylesheet">
-    <link rel="stylesheet" href="dist/css/style.css">
-    <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+    <title>Sukces!</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: white;
+            font-family: 'Heebo', 'Oxygen', sans-serif;
+            color: #4CAF50;
+            text-align: center;
+        }
+        .success-container {
+            max-width: 400px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .success-icon {
+            font-size: 100px;
+            margin-bottom: 20px;
+        }
+        .success-message {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
-<body class="is-boxed has-animations">
-    <div class="body-wrap boxed-container">
-        <header class="site-header text-light">
-        </header>
-
-        <main>
-            <section class="hero text-center text-light">
-                <div class="hero-bg"></div>
-                <div class="hero-particles-container">
-                    <canvas id="hero-particles"></canvas>
-                </div>
-                <div class="container-sm">
-                    <div class="hero-inner">
-                        <div class="hero-copy">
-                            <img src="dist/images/zlota_raczka-no-bg.png" alt="Złota Rączka" style="max-width: 120px; display: block; margin: 0 auto 20px;">
-                            <h1 class="hero-title mt-0">Złota Rączka: fachowa rewolucja</h1>
-                            <p class="hero-paragraph">Dołącz do naszej listy mailingowej, aby otrzymać informacje o Naszym starcie!</p>                    
-                            <div class="hero-cta">
-                                <form action="https://script.google.com/macros/s/AKfycbwl8Ph3YFJFTCVz4o5URtjoyf_3Ywzs2eJURj-AopWCzBzPJLQyp1ijzYcOkzMtlY79Xw/exec" method="POST">
-                                    <input type="email" name="email" placeholder="Twój email" required style="padding: 10px; margin-right: 10px; border-radius: 5px;">
-                                    <button type="submit" class="button button-primary button-wide-mobile">🚀 Zapisz się teraz 🚀</button>
-                                </form>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="video-section section">
-                <div class="container">
-                    <div class="video-inner text-center">
-                        <h2>Dla Fachowców</h2>
-                        <p>Oferujemy płatne praktyki, mentoring, oraz możliwość stałego zatrudnienia. Rozwijaj swoje umiejętności pod okiem najlepszych w branży, zdobywaj doświadczenie i podwyżki, a także uzyskaj tytuły, które wyróżnią Cię na rynku pracy.</p>
-                        <br>
-                    </div>
-                </div>
-            </section>
-
-
-            <hr width="50%" />
-
-            <section class="video-section section">
-                <div class="container">
-                    <div class="video-inner text-center">
-                        <h2>Dla Klientów</h2>
-                        <p>Nasza usługa to gwarancja jakości, bezpieczeństwa i prostoty. Znajdź wykwalifikowaną ekipę fachowców, na którą możesz liczyć, bez zbędnych komplikacji. Zapewniamy jednolite standardy pracy i wykwalifikowany personel.</p>
-                        <br>
-                    </div>
-                </div>
-            </section>
-
-            <hr width="50%" />
-
-            <section class="video-section section">
-                <div class="container">
-                    <div class="video-inner text-center">
-                        <h2>Dowiedz się więcej</h2>
-                        <p>Obejrzyj nasz filmik, aby dowiedzieć się, jak nasza platforma może pomóc Tobie lub Twojej firmie.</p>
-                        <div class="video-wrapper">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/TWÓJ_FILM_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <br>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="site-footer">
-            <div class="footer-particles-container">
-                <canvas id="footer-particles"></canvas>
-            </div>
-            <div class="site-footer-top">
-                <section class="cta section text-light">
-                    <div class="container-sm">
-                        <div class="cta-inner section-inner">
-                            <div class="cta-header text-center">
-                                <h2 class="section-title mt-0">Bądź na bieżąco</h2>
-                                <p class="section-paragraph">Dołącz do naszej listy mailingowej</p>
-                                <div class="cta-cta">
-                                    <form action="#" method="POST">
-                                        <input type="email" placeholder="Twój email" required style="padding: 10px; margin-right: 10px; border-radius: 5px;">
-                                        <button type="submit" class="button button-primary button-wide-mobile">🚀 Zapisz się teraz! 🚀</button>
-                                    </form>
-                                </div>
-
-                       
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-            <div class="site-footer-bottom">
-                <div class="container">
-                    <div class="site-footer-inner">
-                        <ul class="footer-links list-reset">
-                            <li>
-                                <a href="mailto:kontakt@zlotaraczka.pl?subject=Zapytanie">Kontakt</a>
-                            </li>
-                        </ul>
-                        <div class="footer-copyright">&copy; 2024 Złota Rączka, wszelkie prawa zastrzeżone</div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+<body>
+    <div class="success-container">
+        <div class="success-icon">✔</div>
+        <div class="success-message">Sukces!</div>
+        <p>Wkrótce od nas usłyszysz!</p>
     </div>
-
-    <script src="dist/js/main.min.js"></script>
 </body>
 </html>
